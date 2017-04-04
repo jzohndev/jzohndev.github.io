@@ -52,3 +52,12 @@ div.nav_bar {
 	position: fixed;
 	font-size: 150%;
 }
+
+td {
+	padding: 15px;
+}
+
+th {
+	font-size: 120%;
+	padding: 15px;
+}

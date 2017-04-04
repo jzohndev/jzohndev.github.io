@@ -3,13 +3,11 @@
 	<head>
 		<title> Jzohn's Ski Surplus </title>
 		<meta charset = "utf-8" />
+		<script src = "Script1.js"> </script>
 		<link rel = "stylesheet" href = "style.css" type = "text/css" />
 	</head>
 	
-	
-	
-	
-	
+
 	<body>
 		<div class="header">
 			<center>
@@ -38,7 +36,8 @@
 			If you would like to get in touch with Jzohn, or another associate, complete the form below. </br>
 			We take customer service seriously. Responses by email typically take 24-48 hours.
 		</p>
-		<form action = "">
+		
+		<form name = "form" onsubmit = "return validateForm()" method = "post">
 			<p style="text-align:center">
 				<label> First Name <input type = "text" name = "firstName" size = "20" maxlength = "25" /></label> </br>
 			</p>
@@ -46,7 +45,7 @@
 				<label> Last Name <input type = "text" name = "lastName" size = "20" maxlength = "35" /></label> </br>
 			</p>
 			<p style="text-align:center">
-				<label> Email <input type = "email" name = "email" size = "30" maxlength = "100" /> </label> </br>
+				<label> Email <input type = "email" name = "emails" size = "30" maxlength = "100" /> </label> </br>
 			</p>
 			<p style="text-align:center">
 				<select name = "options">
@@ -57,16 +56,21 @@
 			</p>
 			<p style="text-align:center">
 				Additional Comments </br>
-				<textarea name = "comments" rows = "3" cols = "40"></textarea>
+				<textarea name = "comment" rows = "3" cols = "40"></textarea>
 			</p>
 			<p style="text-align:center">
 				<input type = "submit" value = "Submit" />
 				<input type = "reset" value = "Reset" />
 			</p>
 			</div>		
-		</div>	
+		</div>
 		
 		<footer>
+			<h4>
+				<p style = "text-align:center;"> Today's date: </p>
+			</h4>
+			<p id = "date" style = "text-align:center;"></p>
+			<script src = "Script1.js"></script>
 			<img src = "images/footer.png" alt = "skier" width = "100%" />
 		</footer>
 	</body>
