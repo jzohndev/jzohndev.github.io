@@ -1,0 +1,43 @@
+.overlay {
+	background-size: 1100px 568px;
+	position:absolute;
+	width: 1100px;
+	height: 568px;
+}
+
+#background {
+	background-image: url(images/background.png);
+	z-index:1;
+}
+
+#foreground {
+	z-index:2;
+}
+
+#start {
+	background-size: 1100px 586px;
+	width: 1100px;
+	height: 568px;
+	z-index:3;
+}
+
+#title{
+	background-image: url(images/title.png);
+	z-index:7;
+}
+
+.device {
+	z-index:2;
+	position:relative;
+	margin-top: 3%;
+	left: 40px;
+}
+
+.winners {
+	position:absolute;
+	background-size: 1100px 586px;
+	width: 1100px;
+	height: 568px;
+	z-index:6;
+	visibility:hidden;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="MainStyle.css">
+    <title>The Great Race </title>
+    <meta name="description" content="HTML5 Template">   
+</head>
+<body>
+	<div id="background" class="overlay"/>
+	<div id="foreground" class="overlay">
+		<div id="pc" 	class="device" style="margin-top:15%"><img id="pcimage" class="deviceimage" src="images/computer.png" style="width: 100px; height: 100px;"/></div>
+		<div id="xbox"  class="device"><img id="ship2img" class="deviceimage" src="images/xbox_one.png" style="width: 100px; height: 100px;"/></div>
+		<div id="ps" 	class="device"><img id="ship3img" class="deviceimage" src="images/ps4.png" style="width: 100px; height: 100px;"/></div>
+	</div>
+	<div id="start" class="overlay"><img id="rsgimage" src="images/rsg_1.png" style="width: 1100px; height: 568px;"></div>
+	<div id="winners" class="overlay" onclick="Reset()"/>
+		<img id="pcwinner" class="winners" src="images/winner_pc.png"/>
+		<img id="xboxwinner" class="winners" src="images/winner_xbox_one.png"/>
+		<img id="ps4winner" class="winners" src="images/winner_ps4.png"/>
+	</div>
+	<div id="title" class="overlay" onclick="StartAnimation()" visibility="visible"/>
+
+    <script src="GreatRaceScript.js"></script>  
+</body>
+</html>
